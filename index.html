@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+
+    <!-- jQuery is required -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <style>
+        .gambar360 {
+            max-height: 300px !important;
+        }
+
+        a-scene {
+            max-height: 300px;
+            height: 300px;
+        }
+
+        .avatar img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 50%;
+        }
+
+        .uk-logo img {
+            height: 100%;
+            margin: 15px 0;
+            padding: 10px;
+        }
+
+        .uk-height-large {
+    height: 90vh;
+}
+
+.section-1 {
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #1e87f0;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="uk-section-primary uk-preserve-color">
+
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+
+            <nav class="uk-navbar-container uk-section-primary" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" type="button" uk-toggle="target: #sidenav-ia14"></a>
+                </div>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center-left">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="index.html">Home</a></li>
+                                <li class="uk-active"><a href="bio.html">Biography</a></li>
+                                <li>
+                                    <a href="galeri.html">Gallery</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Photos</a></li>
+                                            <li><a href="#">Videos</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="uk-navbar-item uk-logo" href="#">
+                    <img src="/img/logo.png" alt="">
+                </a>
+                    <div class="uk-navbar-center-right">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a href="airtable.html">Airtable</a></li>
+                                <li><a href="vr.html">VR Photo</a></li>
+                                <li><a href="#">HyperCall 14</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('img/header.jpg');">
+    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
+        <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.</p>
+    </div>
+</div>
+    <div class="section-1">
+
+    </div>
+    <div class="uk-offcanvas-content">
+
+
+        <div id="sidenav-ia14" uk-offcanvas="mode: reveal; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <div class="uk-animation-toggle">
+                    <div class="uk-animation-scale-up avatar">
+                        <img src="/img/4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
